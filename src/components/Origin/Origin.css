@@ -1,0 +1,233 @@
+.origin-section {
+  background: #ffffff !important;
+  color: #000;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+  min-height: 100vh;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.origin-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.origin-content {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #000000 !important;
+  color: #fff !important;
+  border-radius: 0;
+}
+
+.origin-title {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+  width: 100%;
+  color: #fff !important;
+}
+
+.origin-section.visible .origin-title {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.origin-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-align: left;
+  width: 100%;
+  color: #fff !important;
+}
+
+.origin-paragraph {
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+  width: 100%;
+  color: #fff !important;
+}
+
+.origin-decision {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: rgba(255, 90, 95, 0.1);
+  border: 2px solid #ff5a5f;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease;
+  width: 100%;
+  color: #fff !important;
+}
+
+.origin-human {
+  font-style: italic;
+  text-align: center;
+  margin: 2rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+  width: 100%;
+  color: #fff !important;
+}
+
+.origin-transformation {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  border: 2px solid #ff5a5f;
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease;
+  width: 100%;
+  color: #fff !important;
+}
+
+.origin-call {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #ff5a5f !important;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+  width: 100%;
+}
+
+.highlight-red {
+  color: #ff5a5f !important;
+  font-weight: 400;
+}
+
+/* Animações escalonadas quando a seção fica visível */
+.origin-section.visible .origin-paragraph:nth-child(1) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}
+
+.origin-section.visible .origin-paragraph:nth-child(2) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.4s;
+}
+
+.origin-section.visible .origin-paragraph:nth-child(3) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
+}
+
+.origin-section.visible .origin-decision {
+  opacity: 1;
+  transform: scale(1);
+  transition-delay: 0.6s;
+}
+
+.origin-section.visible .origin-paragraph:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s;
+}
+
+.origin-section.visible .origin-human {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.8s;
+}
+
+.origin-section.visible .origin-transformation {
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.9s;
+}
+
+.origin-section.visible .origin-call {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .origin-section {
+    padding: 1rem !important;
+  }
+  
+  .origin-content {
+    padding: 2rem;
+    min-height: 70vh;
+  }
+  
+  .origin-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .origin-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  .origin-decision,
+  .origin-transformation {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  
+  .origin-call {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .origin-content {
+    padding: 1.5rem;
+  }
+  
+  .origin-title {
+    font-size: 2.5rem;
+  }
+  
+  .origin-text {
+    font-size: 1rem;
+  }
+}
+
+/* Respeitar preferências de redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+  .origin-section,
+  .origin-title,
+  .origin-paragraph,
+  .origin-decision,
+  .origin-human,
+  .origin-transformation,
+  .origin-call {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

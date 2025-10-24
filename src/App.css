@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+/* Reset completo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #root {
+  width: 100%;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: 'Londrina Solid', cursive;
+  background: #ffffff;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 2rem;
+  border-bottom: 3px solid #000;
+}
+
+.hero-section {
+  padding: 0;
+  border-bottom: none;
+}
+
+/* Garantir que o LanguageProvider não adicione estilos */
+[class*="Provider"] {
+  all: unset !important;
+  display: contents !important;
+}
+
+/* Cores Nouns */
+:root {
+  --nouns-red: #ff5a5f;
+  --nouns-green: #00d4aa;
+  --nouns-black: #000000;
+  --nouns-white: #ffffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section {
+    padding: 1rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* No seu App.css, adicione: */
+
+/* REMOVER FUNDO BRANCO DO CONTAINER PARA SEÇÕES PRETAS */
+.origin-section {
+  background: #000000 !important;
+}
+
+/* Garantir que a seção ocupe toda a largura e altura */
+.section {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0 !important; /* Remover padding que causa borda branca */
+  margin: 0 !important;
+}
+
+/* Apenas o conteúdo interno tem padding */
+.origin-content {
+  padding: 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
