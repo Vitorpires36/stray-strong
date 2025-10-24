@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/stray-strong/static/css/main.c6290def.css",
+    "main.js": "/stray-strong/static/js/main.21f3e3f6.js",
+    "static/media/v1-concrete.jpg": "/stray-strong/static/media/v1-concrete.eac6e76178af400f7ddb.jpg",
+    "static/media/v2-plastic.jpg": "/stray-strong/static/media/v2-plastic.4dcd4a51ac19d4c9c3fd.jpg",
+    "static/media/animals-bg.jpg": "/stray-strong/static/media/animals-bg.8a36c6f28c2e1d035f80.jpg",
+    "static/media/limpeza-praias-logo.png": "/stray-strong/static/media/limpeza-praias-logo.d0d04e9ec5ec471b33c2.png",
+    "static/media/casa-plastica-logo.png": "/stray-strong/static/media/casa-plastica-logo.773977b49e8a148f0c1f.png",
+    "static/media/animal-print.jpg": "/stray-strong/static/media/animal-print.7cfd44d43eccf04ea0b2.jpg",
+    "static/media/coletivo-plastico-logo.jpg": "/stray-strong/static/media/coletivo-plastico-logo.7cfd44d43eccf04ea0b2.jpg",
+    "static/media/lil-feeder-dog.jpg": "/stray-strong/static/media/lil-feeder-dog.515ed51d37d0b1e84f6d.jpg",
+    "static/media/logo-stray-strong.png": "/stray-strong/static/media/logo-stray-strong.3699a6a9cc4577f2c782.png",
+    "static/media/londrina-solid-latin-900.woff": "/stray-strong/static/media/londrina-solid-latin-900.4119075a3f9a9333945e.woff",
+    "static/media/londrina-solid-latin-300.woff": "/stray-strong/static/media/londrina-solid-latin-300.f5ac1c081d17d1aee373.woff",
+    "static/media/londrina-solid-latin-400.woff": "/stray-strong/static/media/londrina-solid-latin-400.e0cc1dbe42139f08bfb3.woff",
+    "static/media/londrina-solid-latin-100.woff": "/stray-strong/static/media/londrina-solid-latin-100.d244ec30ac5e21eb3e9a.woff",
+    "static/media/londrina-solid-latin-900.woff2": "/stray-strong/static/media/londrina-solid-latin-900.8548e8d90865795ec125.woff2",
+    "static/media/londrina-solid-latin-300.woff2": "/stray-strong/static/media/londrina-solid-latin-300.8d082890891ea218d632.woff2",
+    "static/media/londrina-solid-latin-400.woff2": "/stray-strong/static/media/londrina-solid-latin-400.9fef9991ed115b995f4d.woff2",
+    "static/media/londrina-solid-latin-100.woff2": "/stray-strong/static/media/londrina-solid-latin-100.ba4b22735a841b6beb1a.woff2",
+    "index.html": "/stray-strong/index.html",
+    "main.c6290def.css.map": "/stray-strong/static/css/main.c6290def.css.map",
+    "main.21f3e3f6.js.map": "/stray-strong/static/js/main.21f3e3f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6290def.css",
+    "static/js/main.21f3e3f6.js"
+  ]
+}
