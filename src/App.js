@@ -9,6 +9,7 @@ import Cycle from './components/Cycle/Cycle';
 import Participate from './components/Participate/Participate';
 import Mission from './components/Mission/Mission';
 import Partners from './components/Partners/Partners';
+import Footer from './components/Footer/Footer'; // 👈 Adicionei o Footer
 import Form from './components/Form/Form';
 import './App.css';
 
@@ -60,6 +61,9 @@ function App() {
             <Partners />
           </section>
         </div>
+        
+        {/* 👇 Adicionei o Footer aqui */}
+        <Footer />
         
         <Form isOpen={isFormOpen} onClose={handleCloseForm} />
       </div>

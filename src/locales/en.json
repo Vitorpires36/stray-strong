@@ -1,31 +1,41 @@
-{
-    "header": {
-      "about": "About",
-      "evolution": "Evolution",
-      "cycle": "Cycle",
-      "participate": "Participate", 
-      "mission": "Mission",
-      "partners": "Partners"
-    },
-    "origin": {
-      "title": "THE ORIGIN",
-      "paragraph1": "Stray Strong was born from a feeling many know:",
-      "highlight1": "longing and love",
-      "paragraph2": "After losing a beloved dog, I realized I could transform sadness into action and that's when the idea came to create something that would bring visibility to the care of street animals and help them have a better life.",
-      "paragraph3": "Around the world, thousands of dogs and cats live in difficult situations, and they are there, on the streets, and",
-      "highlight2": "almost no one notices them",
-      "decision": "We decided to change this.",
-      "paragraph4": "Stray Strong is a movement made of",
-      "highlight3": "art, empathy and caring hands",
-      "paragraph5": "With the intention of becoming an NGO to support street animals.",
-      "human": "Every small action is a reminder that the city can be more humane.",
-      "transformation": "And it's like this, step by step, that we transform",
-      "highlight4": "pain into love",
-      "highlight5": "love into future",
-      "call": "We can make a difference."
-    },
-
-    "lilfeeders": {
+{   
+  "hero": {
+    "title_line1": "LIL",
+    "title_line2": "FEEDERS",
+    "rotating_text1": "Made with plastic removed from the ocean",
+    "rotating_text2": "Each Lil Feeder removes up to 2kg of plastic from beaches",
+    "rotating_text3": "Handmade with love and purpose",
+    "rotating_text4": "Caring for nature",
+    "rotating_text5": "Small gestures, big waves of change",
+    "cta_primary": "Join the Movement",
+    "cta_secondary": "See the Cycle"
+  },
+  "header": {
+    "about": "About",
+    "evolution": "Evolution",
+    "cycle": "Cycle",
+    "participate": "Participate", 
+    "mission": "Mission",
+    "partners": "Partners"
+  },
+  "origin": {
+    "title": "THE ORIGIN",
+    "paragraph1": "Stray Strong was born from a feeling many know:",
+    "highlight1": "longing and love",
+    "paragraph2": "After losing a beloved dog, I realized I could transform sadness into action and that's when the idea came to create something that would bring visibility to the care of street animals and help them have a better life.",
+    "paragraph3": "Around the world, thousands of dogs and cats live in difficult situations, and they are there, on the streets, and",
+    "highlight2": "almost no one notices them",
+    "decision": "We decided to change this.",
+    "paragraph4": "Stray Strong is a movement made of",
+    "highlight3": "art, empathy and caring hands",
+    "paragraph5": "With the intention of becoming an NGO to support street animals.",
+    "human": "Every small action is a reminder that the city can be more humane.",
+    "transformation": "And it's like this, step by step, that we transform",
+    "highlight4": "pain into love",
+    "highlight5": "love into future",
+    "call": "We can make a difference."
+  },
+  "lilfeeders": {
     "title": "LIL FEEDERS",
     "subtitle": "Caring for animals with art, regeneration and culture",
     "image_caption": "Lil Feeder in action - Community animals benefiting from recycled plastic design",
@@ -110,40 +120,52 @@
     "option5_description": "Be part of Lil Nouns community",
     "option5_button": "Join the Community"
   },
-  
-    "mission": {
-      "mission_title": "MISSION",
-      "mission_text": "Our mission is to transform animal care into a living part of urban culture.",
-      "mission_detail1": "We believe that caring is a regenerative act, capable of transforming streets, people, and the planet. We create actions, products, and experiences that unite art, empathy, and action inspiring communities to protect the animals that share the city with us.",
-      "mission_detail2": "With Lil Feeder, we give shape to this purpose: care becomes visible, accessible, and collective.",
-      "vision_title": "VISION", 
-      "vision_text": "We dream of kinder cities where art, care, and regeneration walk together.",
-      "vision_goal": "We visualize a future where there are no more animals on the streets and Stray Strong is no longer necessary.",
-      "values_title": "OUR VALUES",
-      "value1": "COLLECTIVE CARE",
-      "value2": "EMPATHY",
-      "value3": "REGENERATION", 
-      "value4": "ACCESSIBILITY",
-      "value5": "TRANSPARENCY",
-      "value6": "CREATIVITY",
-      "value7": "COMMUNITY"
-    },
-    "partners": {
-        "title": "OUR PARTNERS",
-        "subtitle": "Building impact together",
-        "partner1_name": "LIMPEZA DE PRAIAS",
-        "partner1_description": "A non-profit organization founded in 2023 with a mission to recover waste from nature and regenerate ecosystems.",
-        "partner1_achievements": "Since the beginning, we've removed over 12 tons of waste from beaches, rivers, and lagoons through more than 200 professional clean-up actions, all made possible through collective funding.",
-        "partner2_name": "CASA PLÁSTICA",
-        "partner2_description": "A social-environmental enterprise focused on raising awareness about plastic use and offering innovative, reusable solutions for its management.",
-        "partner2_achievements": "The organization provides consultancy, workshops, and innovation-driven projects, transforming discarded plastic into great products, while promoting decentralized and collective recycling.",
-        "partner3_name": "COLETIVO PLÁSTICO",
-        "partner3_description": "An open and horizontal collective based in Saquarema, focused on building strategic partnerships between local projects, NGOs, companies, and cultural or environmental initiatives.",
-        "partner3_achievements": "We're in an early-stage journey to become a DAO rooted in community, regeneration, and creativity.",
-        "instagram": "Instagram",
-        "coming_soon": "Coming Soon",
-        "footer": "Together, we're creating a more regenerative future."
-      }
-  
+  "mission": {
+    "mission_title": "MISSION",
+    "mission_text": "Our mission is to transform animal care into a living part of urban culture.",
+    "mission_detail1": "We believe that caring is a regenerative act, capable of transforming streets, people, and the planet. We create actions, products, and experiences that unite art, empathy, and action inspiring communities to protect the animals that share the city with us.",
+    "mission_detail2": "With Lil Feeder, we give shape to this purpose: care becomes visible, accessible, and collective.",
+    "vision_title": "VISION", 
+    "vision_text": "We dream of kinder cities where art, care, and regeneration walk together.",
+    "vision_goal": "We visualize a future where there are no more animals on the streets and Stray Strong is no longer necessary.",
+    "values_title": "OUR VALUES",
+    "value1": "COLLECTIVE CARE",
+    "value2": "EMPATHY",
+    "value3": "REGENERATION", 
+    "value4": "ACCESSIBILITY",
+    "value5": "TRANSPARENCY",
+    "value6": "CREATIVITY",
+    "value7": "COMMUNITY"
+  },
+  "partners": {
+    "title": "OUR PARTNERS",
+    "subtitle": "Building impact together",
+    "partner1_name": "LIMPEZA DE PRAIAS",
+    "partner1_description": "A non-profit organization founded in 2023 with a mission to recover waste from nature and regenerate ecosystems.",
+    "partner1_achievements": "Since the beginning, we've removed over 12 tons of waste from beaches, rivers, and lagoons through more than 200 professional clean-up actions, all made possible through collective funding.",
+    "partner2_name": "CASA PLÁSTICA",
+    "partner2_description": "A social-environmental enterprise focused on raising awareness about plastic use and offering innovative, reusable solutions for its management.",
+    "partner2_achievements": "The organization provides consultancy, workshops, and innovation-driven projects, transforming discarded plastic into great products, while promoting decentralized and collective recycling.",
+    "partner3_name": "COLETIVO PLÁSTICO",
+    "partner3_description": "An open and horizontal collective based in Saquarema, focused on building strategic partnerships between local projects, NGOs, companies, and cultural or environmental initiatives.",
+    "partner3_achievements": "We're in an early-stage journey to become a DAO rooted in community, regeneration, and creativity.",
+    "instagram": "Instagram",
+    "coming_soon": "Coming Soon",
+    "footer": "Together, we're creating a more regenerative future."
+  },
+  "footer": {
+    "description": "Transforming plastic into care, one feeder at a time. Building a more compassionate world through art, empathy and action.",
+    "developed_by": "Site developed by:",
+    "quick_links": "Quick Links",
+    "contact": "Contact",
+    "email": "Email",
+    "ens": "ENS",
+    "donate": "Donate",
+    "follow_us": "Follow Us",
+    "instagram": "Instagram",
+    "lil_nouns": "Lil Nouns",
+    "beach_cleanup": "Beach Cleanup",
+    "copyright": "© 2025 Stray Strong. All rights reserved.",
+    "made_with_love": "Made with ♥ for the animals"
   }
-
+}

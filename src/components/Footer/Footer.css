@@ -1,0 +1,218 @@
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    color: white;
+    padding: 3rem 0 0;
+    margin-top: 4rem;
+    border-top: 3px solid var(--nouns-red);
+    font-size: 1rem; /* 👈 Aumentei a base */
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-logo h3 {
+    color: var(--nouns-red);
+    font-size: 1.8rem; /* 👈 Aumentei de 1.5rem */
+    margin-bottom: 1rem;
+    font-family: 'Londrina Solid', cursive;
+    letter-spacing: 1px;
+  }
+  
+  .footer-description {
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+    font-size: 1rem; /* 👈 Aumentei de 0.9rem */
+  }
+  
+  .footer-credits {
+    font-size: 0.9rem; /* 👈 Aumentei de 0.8rem */
+    color: #999;
+  }
+  
+  .footer-credits strong {
+    color: var(--nouns-red);
+  }
+  
+  .footer-title {
+    color: var(--nouns-red);
+    font-size: 1.3rem; /* 👈 Aumentei de 1.1rem */
+    margin-bottom: 1rem;
+    font-family: 'Londrina Solid', cursive;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.75rem; /* 👈 Aumentei o espaçamento */
+  }
+  
+  .footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem; /* 👈 Aumentei de 0.9rem */
+  }
+  
+  .footer-links a:hover {
+    color: var(--nouns-red);
+  }
+  
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem; /* 👈 Aumentei de 0.9rem */
+  }
+  
+  .contact-label {
+    color: #999;
+    min-width: 60px;
+    font-weight: 500; /* 👈 Adicionei peso para melhor contraste */
+  }
+  
+  .contact-item a,
+  .contact-item code {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item a:hover {
+    color: var(--nouns-red);
+  }
+  
+  .contact-item code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem 0.6rem; /* 👈 Aumentei o padding */
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem; /* 👈 Aumentei de 0.8rem */
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .social-link {
+    color: #ccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1rem; /* 👈 Aumentei de 0.9rem */
+    padding: 0.5rem 0;
+    border-radius: 4px;
+  }
+  
+  .social-link:hover {
+    color: var(--nouns-red);
+    transform: translateX(5px);
+  }
+  
+  /* Bottom Bar */
+  .footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.9rem; /* 👈 Aumentei de 0.8rem */
+    color: #999;
+  }
+  
+  .footer-bottom-content p {
+    margin: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 2rem 0 0;
+      font-size: 0.95rem; /* 👈 Ajuste para mobile */
+    }
+    
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+    
+    .footer-logo h3 {
+      font-size: 1.6rem; /* 👈 Ajuste para mobile */
+    }
+    
+    .footer-title {
+      font-size: 1.2rem; /* 👈 Ajuste para mobile */
+    }
+    
+    .footer-bottom-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+      font-size: 0.85rem; /* 👈 Ajuste para mobile */
+    }
+    
+    .contact-item {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+    
+    .contact-label {
+      min-width: auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-content {
+      gap: 1.5rem;
+    }
+    
+    .footer-section {
+      text-align: center;
+    }
+    
+    .social-links {
+      align-items: center;
+    }
+    
+    .footer-logo h3 {
+      font-size: 1.5rem; /* 👈 Ajuste para mobile pequeno */
+    }
+    
+    .footer-title {
+      font-size: 1.1rem; /* 👈 Ajuste para mobile pequeno */
+    }
+  }

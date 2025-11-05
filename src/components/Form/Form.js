@@ -5,10 +5,13 @@ const Form = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    whatsapp: '',
     city: '',
     participationType: 'host',
     message: ''
   });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -17,18 +20,50 @@ const Form = ({ isOpen, onClose }) => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Dados do formulário:', formData);
-    alert('Thank you for joining! We will contact you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      city: '',
-      participationType: 'host',
-      message: ''
-    });
-    onClose(); // Fecha o modal após envio
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/straysstrong@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          whatsapp: formData.whatsapp,
+          city: formData.city,
+          participationType: formData.participationType,
+          message: formData.message,
+          _subject: '🎯 Novo Lead Stray Strong - Waitlist',
+          _template: 'table',
+          _autoresponse: 'Thank you for joining Stray Strong! We will contact you soon.'
+        })
+      });
+
+      if (response.ok) {
+        alert('Thank you for joining! We will contact you soon.');
+        setFormData({
+          name: '',
+          email: '',
+          whatsapp: '',
+          city: '',
+          participationType: 'host',
+          message: ''
+        });
+        onClose();
+      } else {
+        throw new Error('Failed to submit');
+      }
+    } catch (error) {
+      alert('Error submitting form. Please try again.');
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleOverlayClick = (e) => {
@@ -52,7 +87,7 @@ const Form = ({ isOpen, onClose }) => {
         <form className="waitlist-form" onSubmit={handleSubmit}>
           
           <div className="form-group">
-            <label htmlFor="name" className="form-label">Full Name</label>
+            <label htmlFor="name" className="form-label">Full Name *</label>
             <input
               type="text"
               id="name"
@@ -62,11 +97,12 @@ const Form = ({ isOpen, onClose }) => {
               className="form-input"
               placeholder="Your full name"
               required
+              disabled={isSubmitting}
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="email" className="form-label">Email</label>
+            <label htmlFor="email" className="form-label">Email *</label>
             <input
               type="email"
               id="email"
@@ -76,11 +112,27 @@ const Form = ({ isOpen, onClose }) => {
               className="form-input"
               placeholder="your.email@example.com"
               required
+              disabled={isSubmitting}
             />
           </div>
 
           <div className="form-group">
-            <label htmlFor="city" className="form-label">City</label>
+            <label htmlFor="whatsapp" className="form-label">WhatsApp</label>
+            <input
+              type="tel"
+              id="whatsapp"
+              name="whatsapp"
+              value={formData.whatsapp}
+              onChange={handleChange}
+              className="form-input"
+              placeholder="+55 (11) 99999-9999"
+              disabled={isSubmitting}
+            />
+            <small className="field-note">Optional - for faster contact</small>
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="city" className="form-label">City *</label>
             <input
               type="text"
               id="city"
@@ -90,11 +142,12 @@ const Form = ({ isOpen, onClose }) => {
               className="form-input"
               placeholder="Your city"
               required
+              disabled={isSubmitting}
             />
           </div>
 
           <div className="form-group">
-            <label className="form-label">I want to:</label>
+            <label className="form-label">I want to: *</label>
             <div className="radio-group">
               <label className="radio-option">
                 <input
@@ -103,6 +156,7 @@ const Form = ({ isOpen, onClose }) => {
                   value="host"
                   checked={formData.participationType === 'host'}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                 />
                 <span className="radio-text">🏠 Host a feeder in my neighborhood</span>
               </label>
@@ -114,6 +168,7 @@ const Form = ({ isOpen, onClose }) => {
                   value="supply"
                   checked={formData.participationType === 'supply'}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                 />
                 <span className="radio-text">💧 Supply existing feeders</span>
               </label>
@@ -125,6 +180,7 @@ const Form = ({ isOpen, onClose }) => {
                   value="both"
                   checked={formData.participationType === 'both'}
                   onChange={handleChange}
+                  disabled={isSubmitting}
                 />
                 <span className="radio-text">🌟 Both - host and supply</span>
               </label>
@@ -141,12 +197,23 @@ const Form = ({ isOpen, onClose }) => {
               className="form-textarea"
               rows="3"
               placeholder="Tell us about your interest in the project..."
+              disabled={isSubmitting}
             />
           </div>
 
-          <button type="submit" className="form-submit">
-            Join Waitlist
+          <button 
+            type="submit" 
+            className={`form-submit ${isSubmitting ? 'submitting' : ''}`}
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Join Waitlist'}
           </button>
+
+          <div className="form-footer">
+            <p className="privacy-note">
+              We respect your privacy. Your information will only be used to contact you about the Stray Strong project.
+            </p>
+          </div>
 
         </form>
       </div>

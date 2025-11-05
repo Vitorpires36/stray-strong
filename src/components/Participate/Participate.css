@@ -64,7 +64,7 @@
 .participation-card {
   background: #f8f8f8;
   border: 3px solid #000;
-  padding: 2.5rem; /* Aumentado de 2rem */
+  padding: 2rem; /* Reduzido de 2.5rem para 2rem */
   text-align: center;
   transition: all 0.3s ease;
   display: flex;
@@ -108,9 +108,46 @@
   background: #fff;
 }
 
+/* Estilos para as imagens dos cards - tamanho ícone */
+.card-image {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem auto;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.participate-section.visible .card-image {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animações escalonadas para as imagens */
+.participate-section.visible .participation-card:nth-child(1) .card-image {
+  transition-delay: 0.4s;
+}
+
+.participate-section.visible .participation-card:nth-child(2) .card-image {
+  transition-delay: 0.5s;
+}
+
+.participate-section.visible .participation-card:nth-child(3) .card-image {
+  transition-delay: 0.6s;
+}
+
+.participate-section.visible .participation-card:nth-child(4) .card-image {
+  transition-delay: 0.7s;
+}
+
+.participate-section.visible .participation-card:nth-child(5) .card-image {
+  transition-delay: 0.8s;
+}
+
+/* Remove o estilo do emoji anterior */
 .card-emoji {
-  font-size: 3rem;
-  margin-bottom: 1.5rem; /* Aumentado de 1rem */
+  display: none;
 }
 
 .card-title {
@@ -149,6 +186,124 @@
   color: #fff;
 }
 
+/* Botões de crypto */
+.crypto-buttons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.crypto-buttons .card-button {
+  flex: 1;
+  min-width: 0;
+}
+
+.crypto-buttons .card-button.primary {
+  background: var(--nouns-red);
+  border-color: var(--nouns-red);
+}
+
+.crypto-buttons .card-button.secondary {
+  background: transparent;
+  color: var(--nouns-red);
+  border-color: var(--nouns-red);
+}
+
+.crypto-buttons .card-button.secondary:hover {
+  background: var(--nouns-red);
+  color: white;
+}
+
+/* Modal de crypto */
+.crypto-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 12px;
+}
+
+.crypto-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 300px;
+  color: #333;
+}
+
+.crypto-content h4 {
+  margin-bottom: 1rem;
+  color: var(--nouns-red);
+  font-size: 1.2rem;
+}
+
+.ens-address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  border: 2px dashed #ddd;
+}
+
+.ens-label {
+  font-weight: bold;
+  color: #666;
+}
+
+.ens-value {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.copy-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.copy-button:hover {
+  background: #e0e0e0;
+}
+
+.crypto-note {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.close-crypto {
+  background: var(--nouns-red);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.close-crypto:hover {
+  background: #e04545;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   .participate-section {
@@ -173,7 +328,13 @@
   }
   
   .participation-card {
-    padding: 2rem; /* Aumentado para mobile */
+    padding: 1.5rem; /* Reduzido para mobile */
+  }
+  
+  .card-image {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 0.8rem;
   }
   
   .card-title {
@@ -188,6 +349,20 @@
     font-size: 0.9rem;
     padding: 0.9rem 1.5rem; /* Aumentado para mobile */
   }
+
+  .crypto-buttons {
+    flex-direction: column;
+  }
+  
+  .ens-address {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .crypto-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
 }
 
 /* Respeitar preferências de redução de movimento */
@@ -195,7 +370,8 @@
   .participate-section,
   .participate-title,
   .participate-subtitle,
-  .participation-card {
+  .participation-card,
+  .card-image {
     opacity: 1;
     transform: none;
     transition: none;

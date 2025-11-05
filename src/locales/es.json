@@ -1,31 +1,41 @@
-{
-    "header": {
-      "about": "Acerca",
-      "evolution": "Evolución",
-      "cycle": "Ciclo",
-      "participate": "Participar",
-      "mission": "Misión",
-      "partners": "Socios"
-    },
-    "origin": {
-      "title": "EL ORIGEN",
-      "paragraph1": "Stray Strong nació de un sentimiento que muchos conocen:",
-      "highlight1": "añoranza y amor",
-      "paragraph2": "Después de perder un perro querido, me di cuenta de que podía transformar la tristeza en acción y fue entonces cuando surgió la idea de crear algo que diera visibilidad al cuidado de los animales callejeros y les ayudara a tener una vida mejor.",
-      "paragraph3": "En todo el mundo, miles de perros y gatos viven en situaciones difíciles, y están allí, en las calles, y",
-      "highlight2": "casi nadie se da cuenta",
-      "decision": "Decidimos cambiar esto.",
-      "paragraph4": "Stray Strong es un movimiento hecho de",
-      "highlight3": "arte, empatía y manos que cuidan",
-      "paragraph5": "Con la intención de convertirse en una ONG para apoyar a los animales callejeros.",
-      "human": "Cada pequeña acción es un recordatorio de que la ciudad puede ser más humana.",
-      "transformation": "Y así, paso a paso, transformamos",
-      "highlight4": "dolor en amor",
-      "highlight5": "amor en futuro",
-      "call": "Podemos marcar la diferencia."
-    },
-
-    "lilfeeders": {
+{   
+  "hero": {
+    "title_line1": "LIL",
+    "title_line2": "FEEDERS",
+    "rotating_text1": "Hechos con plástico retirado del océano",
+    "rotating_text2": "Cada Lil Feeder remueve hasta 2kg de plástico de las playas",
+    "rotating_text3": "Producido a mano, con amor y propósito",
+    "rotating_text4": "Cuidando la naturaleza",
+    "rotating_text5": "Pequeños gestos, grandes olas de cambio",
+    "cta_primary": "Unirse al Movimiento", 
+    "cta_secondary": "Ver el Ciclo"
+  },
+  "header": {
+    "about": "Acerca",
+    "evolution": "Evolución",
+    "cycle": "Ciclo",
+    "participate": "Participar",
+    "mission": "Misión",
+    "partners": "Socios"
+  },
+  "origin": {
+    "title": "EL ORIGEN",
+    "paragraph1": "Stray Strong nació de un sentimiento que muchos conocen:",
+    "highlight1": "añoranza y amor",
+    "paragraph2": "Después de perder un perro querido, me di cuenta de que podía transformar la tristeza en acción y fue entonces cuando surgió la idea de crear algo que diera visibilidad al cuidado de los animales callejeros y les ayudara a tener una vida mejor.",
+    "paragraph3": "En todo el mundo, miles de perros y gatos viven en situaciones difíciles, y están allí, en las calles, y",
+    "highlight2": "casi nadie se da cuenta",
+    "decision": "Decidimos cambiar esto.",
+    "paragraph4": "Stray Strong es un movimiento hecho de",
+    "highlight3": "arte, empatía y manos que cuidan",
+    "paragraph5": "Con la intención de convertirse en una ONG para apoyar a los animales callejeros.",
+    "human": "Cada pequeña acción es un recordatorio de que la ciudad puede ser más humana.",
+    "transformation": "Y así, paso a paso, transformamos",
+    "highlight4": "dolor en amor",
+    "highlight5": "amor en futuro",
+    "call": "Podemos marcar la diferencia."
+  },
+  "lilfeeders": {
     "title": "LIL FEEDERS", 
     "subtitle": "Cuidamos de los animales con arte, regeneración y cultura",
     "image_caption": "Lil Feeder en acción - Animales de la comunidad beneficiándose del diseño en plástico reciclado",
@@ -110,24 +120,24 @@
     "option5_description": "Sé parte de la comunidad Lil Nouns",
     "option5_button": "Unirse a la Comunidad"
   },
-    "mission": {
-        "mission_title": "MISIÓN",
-        "mission_text": "Nuestra misión es transformar el cuidado animal en una parte viva de la cultura urbana.",
-        "mission_detail1": "Creemos que cuidar es un acto regenerativo, capaz de transformar calles, personas y el planeta. Creamos acciones, productos y experiencias que unen arte, empatía y acción inspirando comunidades a proteger los animales que comparten la ciudad con nosotros.",
-        "mission_detail2": "Con Lil Feeder, damos forma a este propósito: el cuidado se vuelve visible, accesible y colectivo.",
-        "vision_title": "VISIÓN",
-        "vision_text": "Soñamos con ciudades más amables donde el arte, el cuidado y la regeneración caminen juntos.",
-        "vision_goal": "Visualizamos un futuro donde no haya más animales en las calles y Stray Strong ya no sea necesario.",
-        "values_title": "NUESTROS VALORES",
-        "value1": "CUIDADO COLECTIVO",
-        "value2": "EMPATÍA",
-        "value3": "REGENERACIÓN",
-        "value4": "ACCESIBILIDAD", 
-        "value5": "TRANSPARENCIA",
-        "value6": "CREATIVIDAD",
-        "value7": "COMUNIDAD"
-      },
-      "partners": {
+  "mission": {
+    "mission_title": "MISIÓN",
+    "mission_text": "Nuestra misión es transformar el cuidado animal en una parte viva de la cultura urbana.",
+    "mission_detail1": "Creemos que cuidar es un acto regenerativo, capaz de transformar calles, personas y el planeta. Creamos acciones, productos y experiencias que unen arte, empatía y acción inspirando comunidades a proteger los animales que comparten la ciudad con nosotros.",
+    "mission_detail2": "Con Lil Feeder, damos forma a este propósito: el cuidado se vuelve visible, accesible y colectivo.",
+    "vision_title": "VISIÓN",
+    "vision_text": "Soñamos con ciudades más amables donde el arte, el cuidado y la regeneración caminen juntos.",
+    "vision_goal": "Visualizamos un futuro donde no haya más animales en las calles y Stray Strong ya no sea necesario.",
+    "values_title": "NUESTROS VALORES",
+    "value1": "CUIDADO COLECTIVO",
+    "value2": "EMPATÍA",
+    "value3": "REGENERACIÓN",
+    "value4": "ACCESIBILIDAD", 
+    "value5": "TRANSPARENCIA",
+    "value6": "CREATIVIDAD",
+    "value7": "COMUNIDAD"
+  },
+  "partners": {
     "title": "NUESTROS SOCIOS",
     "subtitle": "Construyendo impacto juntos",
     "partner1_name": "LIMPEZA DE PRAIAS",
@@ -142,6 +152,20 @@
     "instagram": "Instagram",
     "coming_soon": "Próximamente",
     "footer": "Juntos, estamos creando un futuro más regenerativo."
+  },
+  "footer": {
+    "description": "Transformando plástico en cuidado, un comedero a la vez. Construyendo un mundo más compasivo a través del arte, la empatía y la acción.",
+    "developed_by": "Sitio desarrollado por:",
+    "quick_links": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "email": "Email",
+    "ens": "ENS",
+    "donate": "Donar",
+    "follow_us": "Síguenos",
+    "instagram": "Instagram",
+    "lil_nouns": "Lil Nouns",
+    "beach_cleanup": "Limpieza de Playas",
+    "copyright": "© 2025 Stray Strong. Todos los derechos reservados.",
+    "made_with_love": "Hecho con ♥ para los animales"
   }
-  
-  }
+}

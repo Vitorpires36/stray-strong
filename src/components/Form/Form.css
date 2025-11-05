@@ -362,3 +362,68 @@
     transform: none;
   }
 }
+
+/* Campo WhatsApp */
+.field-note {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Rodapé do formulário */
+.form-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.privacy-note {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Loading state melhorado */
+.form-submit.submitting {
+  opacity: 0.7;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.form-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.form-submit.submitting::after {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  border: 2px solid transparent;
+  border-top: 2px solid currentColor;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Melhorias de acessibilidade */
+.form-input:focus,
+.form-textarea:focus {
+  outline: 2px solid var(--nouns-red);
+  outline-offset: 2px;
+}
+
+.radio-option input[type="radio"]:focus + .radio-text {
+  outline: 2px solid var(--nouns-red);
+  outline-offset: 2px;
+  border-radius: 4px;
+}

@@ -2,11 +2,21 @@ import React, { useEffect, useRef } from 'react';
 import { useTranslation } from '../../hooks/useTranslation';
 import './Mission.css';
 
+// Import das imagens
+import cuidadoImg from '../../assets/images/cuidado.png';
+import empatiaImg from '../../assets/images/empatia.png';
+import regenImg from '../../assets/images/regen.png';
+import acessImg from '../../assets/images/acess.png';
+import transImg from '../../assets/images/trans.png';
+import criatividadeImg from '../../assets/images/creatividade.png';
+import comunidadeImg from '../../assets/images/comunidade.png';
+
 const Mission = () => {
   const { t } = useTranslation();
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    const sectionElement = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -16,25 +26,25 @@ const Mission = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (sectionElement) {
+      observer.observe(sectionElement);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (sectionElement) {
+        observer.unobserve(sectionElement);
       }
     };
   }, []);
 
   const values = [
-    { emoji: "👥", name: t('mission.value1') },
-    { emoji: "💝", name: t('mission.value2') },
-    { emoji: "🔄", name: t('mission.value3') },
-    { emoji: "🎯", name: t('mission.value4') },
-    { emoji: "🔍", name: t('mission.value5') },
-    { emoji: "🎨", name: t('mission.value6') },
-    { emoji: "🌐", name: t('mission.value7') }
+    { image: comunidadeImg, name: t('mission.value1') },
+    { image: empatiaImg, name: t('mission.value2') },
+    { image: regenImg, name: t('mission.value3') },
+    { image: cuidadoImg, name: t('mission.value4') },
+    { image: transImg, name: t('mission.value5') },
+    { image: criatividadeImg, name: t('mission.value6') },
+    { image: acessImg, name: t('mission.value7') }
   ];
 
   return (
@@ -72,7 +82,11 @@ const Mission = () => {
           <div className="values-grid">
             {values.map((value, index) => (
               <div key={index} className="value-card">
-                <div className="value-emoji">{value.emoji}</div>
+                <img 
+                  src={value.image} 
+                  alt={value.name}
+                  className="value-image"
+                />
                 <h3 className="value-name">{value.name}</h3>
               </div>
             ))}
