@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stray-strong/static/css/main.c6290def.css",
-    "main.js": "/stray-strong/static/js/main.21f3e3f6.js",
+    "main.css": "/stray-strong/static/css/main.8faee93b.css",
+    "main.js": "/stray-strong/static/js/main.68b753db.js",
     "static/media/v1-concrete.jpg": "/stray-strong/static/media/v1-concrete.eac6e76178af400f7ddb.jpg",
     "static/media/v2-plastic.jpg": "/stray-strong/static/media/v2-plastic.4dcd4a51ac19d4c9c3fd.jpg",
     "static/media/animals-bg.jpg": "/stray-strong/static/media/animals-bg.8a36c6f28c2e1d035f80.jpg",
@@ -10,21 +10,32 @@
     "static/media/animal-print.jpg": "/stray-strong/static/media/animal-print.7cfd44d43eccf04ea0b2.jpg",
     "static/media/coletivo-plastico-logo.jpg": "/stray-strong/static/media/coletivo-plastico-logo.7cfd44d43eccf04ea0b2.jpg",
     "static/media/lil-feeder-dog.jpg": "/stray-strong/static/media/lil-feeder-dog.515ed51d37d0b1e84f6d.jpg",
-    "static/media/logo-stray-strong.png": "/stray-strong/static/media/logo-stray-strong.3699a6a9cc4577f2c782.png",
     "static/media/londrina-solid-latin-900.woff": "/stray-strong/static/media/londrina-solid-latin-900.4119075a3f9a9333945e.woff",
     "static/media/londrina-solid-latin-300.woff": "/stray-strong/static/media/londrina-solid-latin-300.f5ac1c081d17d1aee373.woff",
     "static/media/londrina-solid-latin-400.woff": "/stray-strong/static/media/londrina-solid-latin-400.e0cc1dbe42139f08bfb3.woff",
+    "static/media/cuidado.png": "/stray-strong/static/media/cuidado.ac35473a971d0f68b921.png",
     "static/media/londrina-solid-latin-100.woff": "/stray-strong/static/media/londrina-solid-latin-100.d244ec30ac5e21eb3e9a.woff",
     "static/media/londrina-solid-latin-900.woff2": "/stray-strong/static/media/londrina-solid-latin-900.8548e8d90865795ec125.woff2",
     "static/media/londrina-solid-latin-300.woff2": "/stray-strong/static/media/londrina-solid-latin-300.8d082890891ea218d632.woff2",
     "static/media/londrina-solid-latin-400.woff2": "/stray-strong/static/media/londrina-solid-latin-400.9fef9991ed115b995f4d.woff2",
+    "static/media/entrar.png": "/stray-strong/static/media/entrar.1486cbaf2344a8d10d79.png",
     "static/media/londrina-solid-latin-100.woff2": "/stray-strong/static/media/londrina-solid-latin-100.ba4b22735a841b6beb1a.woff2",
+    "static/media/comunidade.png": "/stray-strong/static/media/comunidade.dbfc62baf0fd14c9083d.png",
+    "static/media/doar.png": "/stray-strong/static/media/doar.ce7b4f1224feca16c6dc.png",
+    "static/media/empatia.png": "/stray-strong/static/media/empatia.3bd546fcfd0fd7556631.png",
+    "static/media/creatividade.png": "/stray-strong/static/media/creatividade.77b0b6a7af03ddc9353e.png",
+    "static/media/trans.png": "/stray-strong/static/media/trans.59f7ee5079cd1199a723.png",
+    "static/media/regen.png": "/stray-strong/static/media/regen.db9e69ca027b583b3fc6.png",
+    "static/media/abastecer.png": "/stray-strong/static/media/abastecer.900affed6ce32aca7bb8.png",
+    "static/media/comprar.png": "/stray-strong/static/media/comprar.59bfbdaf09196c91e2a6.png",
+    "static/media/instalar.png": "/stray-strong/static/media/instalar.f22b6074c7615bc0c0ff.png",
+    "static/media/acess.png": "/stray-strong/static/media/acess.5e7040218bddf5946a1d.png",
     "index.html": "/stray-strong/index.html",
-    "main.c6290def.css.map": "/stray-strong/static/css/main.c6290def.css.map",
-    "main.21f3e3f6.js.map": "/stray-strong/static/js/main.21f3e3f6.js.map"
+    "main.8faee93b.css.map": "/stray-strong/static/css/main.8faee93b.css.map",
+    "main.68b753db.js.map": "/stray-strong/static/js/main.68b753db.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6290def.css",
-    "static/js/main.21f3e3f6.js"
+    "static/css/main.8faee93b.css",
+    "static/js/main.68b753db.js"
   ]
 }
